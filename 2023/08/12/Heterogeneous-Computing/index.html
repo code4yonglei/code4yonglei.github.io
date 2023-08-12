@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Heterogeneous Computing | BlackJack's Apartment</title><meta name="author" content="BlackJack"><meta name="copyright" content="BlackJack"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.The Moore’s Law 2.Parallel computing   1. The Moore’s LawTraditionally, computing requirements were associated with Central Processing Unit (CPU), which is a complex component that drives the funct">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Heterogeneous Computing">
+<meta property="og:url" content="https://github.com/2023/08/12/Heterogeneous-Computing/index.html">
+<meta property="og:site_name" content="BlackJack&#39;s Apartment">
+<meta property="og:description" content="1.The Moore’s Law 2.Parallel computing   1. The Moore’s LawTraditionally, computing requirements were associated with Central Processing Unit (CPU), which is a complex component that drives the funct">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/img/frontpage.jpg">
+<meta property="article:published_time" content="2023-08-12T15:53:01.000Z">
+<meta property="article:modified_time" content="2023-08-12T18:09:02.743Z">
+<meta property="article:author" content="BlackJack">
+<meta property="article:tag" content="GPU">
+<meta property="article:tag" content="OpenACC">
+<meta property="article:tag" content="OpenMP">
+<meta property="article:tag" content="CUDA">
+<meta property="article:tag" content="HIP">
+<meta property="article:tag" content="oneAPI">
+<meta property="article:tag" content="OpenCL">
+<meta property="article:tag" content="SYCL">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Julia">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/img/frontpage.jpg"><link rel="shortcut icon" href="/img/favicon.jpg"><link rel="canonical" href="https://github.com/2023/08/12/Heterogeneous-Computing/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Heterogeneous Computing',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-12 20:09:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Projects</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/frontpage.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="BlackJack's Apartment"><span class="site-name">BlackJack's Apartment</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Projects</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Heterogeneous Computing</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-08-12T15:53:01.000Z" title="Created 2023-08-12 17:53:01">2023-08-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-08-12T18:09:02.743Z" title="Updated 2023-08-12 20:09:02">2023-08-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/programming/">programming</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Heterogeneous Computing"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><ul>
+<li><a href="#1">1.The Moore’s Law</a></li>
+<li><a href="#2">2.Parallel computing</a></li>
+</ul>
+<p><span id='1'></span></p>
+<h2 id="1-The-Moore’s-Law"><a href="#1-The-Moore’s-Law" class="headerlink" title="1. The Moore’s Law"></a>1. The Moore’s Law</h2><p>Traditionally, computing requirements were associated with Central Processing Unit (CPU), which is a complex component that drives the functions of all types of computers, from desktops to laptops and smartphones. The development of the modern CPU has been a long and intricate process due to a highly demanding requirement from scientific and High Performance Computing (HPC) community. Transistors are the basic building blocks that regulate the operation of computers and all other modern electronic circuits and is the basic unit of CPU.</p>
+<p>The <strong>Moore’s Law</strong> states that the number of transistors in a dense integrated circuit doubles about every two years. More transistors means smaller size of a single element, so higher core frequency can be achieved. Up until the year of 2000s, the CPU manufacturers including IBM, Intel, and AMD produce faster CPUs by making them work at a higher speed, 16 MHz, 20 MHz, 66 MHz, 100 MHz, and eventually 200, 333, 466 MHz … It looks like they could keep increasing the CPU speeds and provide higher performance every year. However, at the beginning of 2000s, it was obvious that continuously increasing the CPU speeds couldn’t go on forever due to the power consumption limits. The power consumption scales with frequency to the third power, and therefore the growth in the core frequency has slowed down significantly, which limits the improvement on the computational performance of single-core CPUs.</p>
+<p>Increasing computational performance of processing units has been sustained with two main strategies over the years: 1) Increase the single processor performance; and 2) More recently, increase the number of physical cores. Both strategies promote the development of parallel computing for scientific and HPC community. In fact, higher performance of a single node has to rely on its more complicated structure and still can be achieved with SIMD (single instruction multiple data), branch prediction, etc.</p>
+<p><span id='2'></span></p>
+<h2 id="2-Parallel-computing"><a href="#2-Parallel-computing" class="headerlink" title="2. Parallel computing"></a>2. Parallel computing</h2><p>Parallel computing, which is interchangeable with parallel processing or in conjunction with parallel programming, refers to the process of decomposing a computational problem into smaller subtasks that can be executed simultaneously using multiple processing units. Parallel computing is critical for large scale projects in which speed and accuracy are needed. It is a complex task, but allows developers, researchers, and users to accomplish research and analysis quicker than with a program that can only process one task at a time.</p>
+<p>How a problem is split into smaller subtasks strongly depends on the problem. There are two fundamental types of parallelism in applications: <strong>task parallelism</strong> and <strong>data parallelism</strong>.</p>
+<ul>
+<li>Task parallelism arises when there are many tasks or functions that can be operated independently and largely in parallel. Task parallelism focuses on distributing functions across multiple cores.</li>
+<li>Data parallelism arises when there are many data items that can be operated on at the same time. Data parallelism focuses on distributing the data across multiple cores.</li>
+</ul>
+<p>More pertinently, two of the most commonly used programming approaches are <strong>SIMD</strong> and <strong>MIMD</strong>.</p>
+<ul>
+<li>SIMD, or single instruction multiple data, is a form of parallel computing related to a computer architecture. There are multiple cores in the computer. All cores execute the same instruction stream at any time, each operating on different data streams. SIMD is typically used to analyze large data sets that are based on the same specified benchmarks. Vector computers are typically characterized as SIMD, and most modern computers employ a SIMD architecture. Perhaps the biggest advantage of SIMD is that, while writing code on the CPU, the programmers can continue to think sequentially yet achieve parallel speed-up from parallel data operations because the compiler takes care of the details.</li>
+<li>MIMD, or multiple instruction multiple data, is another common form of parallel computing and computer architecture in which multiple cores operate on multiple data streams, each executing independent instructions. Many MIMD architectures also include SIMD execution sub-components.</li>
+</ul>
+<p>Besides SIMD and MIMD, the computer architecture can also be subdivided by its memory organization, which is generally classified into two types: <strong>multi-node with distributed memory</strong> and <strong>multiprocessor with shared memory</strong>.</p>
+<ul>
+<li>In a multi-node system, large scale computational engines are constructed from many processors connected by a network. Each processor has its own local memory, and processors can communicate the contents of their local memory over the network. The left figure in Fig.<del>\ref{fig:multinode_vs_multicore} shows a typical multi-node system with distributed memory. These systems are often referred to as</del>\textbf{clusters}.</li>
+<li>Multiprocessor architectures typically range in size from dual-processor to dozens or hundreds of processors. These processors are either physically connected to the same memory (the right figure in Fig.~\ref{fig:multinode_vs_multicore}), or share a low-latency link (such as PCI-Express or PCIe).</li>
+<li>Although sharing memory implies a shared address space, it does not necessarily mean there is a single physical memory. Such multiprocessors include both single-chip systems with multiple cores (known as <strong>multicore</strong>) and computers consisting of multiple chips, each of which might have a multicore design.</li>
+<li>Multicore architectures have displaced single-core architectures permanently. The term <strong>many-core</strong> is usually used to describe multicore architectures with an especially high number of cores (tens or hundreds). Recently, computer architectures have been transitioning from multicore to many-core, and a representative of many-core computing hardware is graphics processing unit (GPU).</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://github.com">BlackJack</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://github.com/2023/08/12/Heterogeneous-Computing/">https://github.com/2023/08/12/Heterogeneous-Computing/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/GPU/">GPU</a><a class="post-meta__tags" href="/tags/OpenACC/">OpenACC</a><a class="post-meta__tags" href="/tags/OpenMP/">OpenMP</a><a class="post-meta__tags" href="/tags/CUDA/">CUDA</a><a class="post-meta__tags" href="/tags/HIP/">HIP</a><a class="post-meta__tags" href="/tags/oneAPI/">oneAPI</a><a class="post-meta__tags" href="/tags/OpenCL/">OpenCL</a><a class="post-meta__tags" href="/tags/SYCL/">SYCL</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/Julia/">Julia</a></div><div class="post_share"><div class="social-share" data-image="/img/frontpage.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/12/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Hello World</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/01/BlackJack-s-first-blog/" title="BlackJack's First Blog"><img class="cover" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">BlackJack's First Blog</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/favicon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BlackJack</div><div class="author-info__description">Personal views about work & life</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-The-Moore%E2%80%99s-Law"><span class="toc-number">1.</span> <span class="toc-text">1. The Moore’s Law</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Parallel-computing"><span class="toc-number">2.</span> <span class="toc-text">2. Parallel computing</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/08/12/hello-world/" title="Hello World">Hello World</a><time datetime="2023-08-12T17:47:27.850Z" title="Created 2023-08-12 19:47:27">2023-08-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/12/Heterogeneous-Computing/" title="Heterogeneous Computing"><img src="/img/frontpage.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Heterogeneous Computing"/></a><div class="content"><a class="title" href="/2023/08/12/Heterogeneous-Computing/" title="Heterogeneous Computing">Heterogeneous Computing</a><time datetime="2023-08-12T15:53:01.000Z" title="Created 2023-08-12 17:53:01">2023-08-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/01/BlackJack-s-first-blog/" title="BlackJack's First Blog"><img src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="BlackJack's First Blog"/></a><div class="content"><a class="title" href="/2023/08/01/BlackJack-s-first-blog/" title="BlackJack's First Blog">BlackJack's First Blog</a><time datetime="2023-08-01T09:52:20.000Z" title="Created 2023-08-01 11:52:20">2023-08-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By BlackJack</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
