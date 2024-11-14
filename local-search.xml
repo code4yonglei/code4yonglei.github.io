@@ -32,24 +32,22 @@
   
   <entry>
     <title>NEW hello world</title>
-    <link href="/2024/11/13/NEW-hello-world/"/>
-    <url>/2024/11/13/NEW-hello-world/</url>
+    <link href="/2024/11/10/NEW-hello-world/"/>
+    <url>/2024/11/10/NEW-hello-world/</url>
     
     <content type="html"><![CDATA[<h1 id="This-is-another-blogpost"><a href="#This-is-another-blogpost" class="headerlink" title="This is another blogpost"></a>This is another blogpost</h1><h2 id="1-Horizontal-Rules"><a href="#1-Horizontal-Rules" class="headerlink" title="1. Horizontal Rules"></a>1. Horizontal Rules</h2><hr><hr><h2 id="2-Typographic-replacements"><a href="#2-Typographic-replacements" class="headerlink" title="2. Typographic replacements"></a>2. Typographic replacements</h2><p>Enable typographer option to see result.</p><p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p><p>test.. test… test….. test?….. test!….</p><p>“Smartypants, double quotes” and ‘single quotes’</p><h2 id="3-Emphasis"><a href="#3-Emphasis" class="headerlink" title="3. Emphasis"></a>3. Emphasis</h2><p><strong>This is bold text</strong></p><p><em>This is italic text</em></p><p><del>Strikethrough</del></p><h2 id="4-Blockquotes"><a href="#4-Blockquotes" class="headerlink" title="4. Blockquotes"></a>4. Blockquotes</h2><blockquote><p>Blockquotes can also be nested…</p></blockquote><h2 id="5-Lists"><a href="#5-Lists" class="headerlink" title="5. Lists"></a>5. Lists</h2><p>Unordered</p><ul><li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li><li>Sub-lists are made by indenting 2 spaces:<ul><li>Marker character change forces new list start:<ul><li>Ac tristique libero volutpat at</li></ul><ul><li>Facilisis in pretium nisl aliquet</li></ul><ul><li>Nulla volutpat aliquam velit</li></ul></li></ul></li><li>Very easy!</li></ul><p>Ordered</p><ol><li>Lorem ipsum dolor sit amet</li><li>Consectetur adipiscing elit</li><li>Integer molestie lorem at massa</li></ol><h2 id="6-Code"><a href="#6-Code" class="headerlink" title="6. Code"></a>6. Code</h2><p>Inline <code>code</code></p><p>Indented code</p><pre><code class="hljs">// Some commentsline 1 of codeline 2 of codeline 3 of code</code></pre><p>Block code “fences”</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs conole">Sample text here...<br></code></pre></td></tr></table></figure><p>Syntax highlighting</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">function</span> (<span class="hljs-params">bar</span>) &#123;<br>  <span class="hljs-keyword">return</span> bar++;<br>&#125;;<br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">foo</span>(<span class="hljs-number">5</span>));<br></code></pre></td></tr></table></figure><h2 id="7-Tables"><a href="#7-Tables" class="headerlink" title="7. Tables"></a>7. Tables</h2><table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>path to data files to supply data</td></tr><tr><td>ext</td><td>extension to be used for dest files</td></tr></tbody></table><p>Right aligned columns</p><table><thead><tr><th align="right">Option</th><th align="center">Description</th></tr></thead><tbody><tr><td align="right">data</td><td align="center">path to data files to supply data</td></tr><tr><td align="right">ext</td><td align="center">extension to be used for dest files</td></tr></tbody></table><h2 id="8-Links-and-Images"><a href="#8-Links-and-Images" class="headerlink" title="8. Links and Images"></a>8. Links and Images</h2><p><a href="http://dev.nodeca.com/">link text</a></p><p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Dojocat"></p>]]></content>
     
     
     <categories>
       
-      <category>Website</category>
+      <category>Test</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>Hexo</tag>
-      
-      <tag>Github Pages</tag>
+      <tag>Test</tag>
       
     </tags>
     
@@ -59,12 +57,24 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2024/11/10/hello-world/"/>
-    <url>/2024/11/10/hello-world/</url>
+    <link href="/2024/11/09/hello-world/"/>
+    <url>/2024/11/09/hello-world/</url>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>Test</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Test</tag>
+      
+    </tags>
     
   </entry>
   
