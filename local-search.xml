@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>GENERAL Introduction to GPU Programming</title>
+    <link href="/2025/GENERAL-Introduction-to-GPU-Programming/"/>
+    <url>/2025/GENERAL-Introduction-to-GPU-Programming/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-What-is-GPU"><a href="#1-What-is-GPU" class="headerlink" title="1. What is GPU?"></a>1. What is GPU?</h2><h2 id="2-Why-GPUs"><a href="#2-Why-GPUs" class="headerlink" title="2. Why GPUs?"></a>2. Why GPUs?</h2><h2 id="3-What-is-GPU-Programming"><a href="#3-What-is-GPU-Programming" class="headerlink" title="3. What is GPU Programming?"></a>3. What is GPU Programming?</h2><h2 id="4-GPU-Programming-models"><a href="#4-GPU-Programming-models" class="headerlink" title="4. GPU Programming models"></a>4. GPU Programming models</h2><h2 id="5-Summary"><a href="#5-Summary" class="headerlink" title="5. Summary"></a>5. Summary</h2><h2 id="6-Useful-links-and-references"><a href="#6-Useful-links-and-references" class="headerlink" title="6. Useful links and references:"></a>6. Useful links and references:</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>Programming</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GPU Programming</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>PRACTICAL Introduction to Python Virtual Environment</title>
     <link href="/2025/PRACTICAL-Introduction-to-Python-Virtual-Environment/"/>
     <url>/2025/PRACTICAL-Introduction-to-Python-Virtual-Environment/</url>
@@ -38,31 +63,6 @@
     <content type="html"><![CDATA[]]></content>
     
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>GENERAL Introduction to GPU Programming</title>
-    <link href="/2024/GENERAL-Introduction-to-GPU-Programming/"/>
-    <url>/2024/GENERAL-Introduction-to-GPU-Programming/</url>
-    
-    <content type="html"><![CDATA[<h2 id="1-What-is-GPU"><a href="#1-What-is-GPU" class="headerlink" title="1. What is GPU?"></a>1. What is GPU?</h2><h2 id="2-Why-GPUs"><a href="#2-Why-GPUs" class="headerlink" title="2. Why GPUs?"></a>2. Why GPUs?</h2><h2 id="3-What-is-GPU-Programming"><a href="#3-What-is-GPU-Programming" class="headerlink" title="3. What is GPU Programming?"></a>3. What is GPU Programming?</h2><h2 id="4-GPU-Programming-models"><a href="#4-GPU-Programming-models" class="headerlink" title="4. GPU Programming models"></a>4. GPU Programming models</h2><h2 id="5-Summary"><a href="#5-Summary" class="headerlink" title="5. Summary"></a>5. Summary</h2><h2 id="6-Useful-links-and-references"><a href="#6-Useful-links-and-references" class="headerlink" title="6. Useful links and references:"></a>6. Useful links and references:</h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>Programming</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>GPU Programming</tag>
-      
-    </tags>
     
   </entry>
   
