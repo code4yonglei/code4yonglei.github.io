@@ -19,23 +19,32 @@
   <meta name="author" content="BlackJack">
   <meta name="keywords" content="">
   
-    <meta name="description" content="RSE &amp; AE @ NSC &amp; ENCCS">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="https://code4yonglei.github.io/categories/index.html">
+    <meta name="description" content="1. What is GPU?2. Why GPUs?3. What is GPU Programming?4. GPU Programming models5. Summary6. Useful links and references:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GENERAL Introduction to GPU Programming">
+<meta property="og:url" content="https://code4yonglei.github.io/2024/GENERAL-Introduction-to-GPU-Programming/index.html">
 <meta property="og:site_name" content="BJ&#39;s Apt">
-<meta property="og:description" content="RSE &amp; AE @ NSC &amp; ENCCS">
+<meta property="og:description" content="1. What is GPU?2. Why GPUs?3. What is GPU Programming?4. GPU Programming models5. Summary6. Useful links and references:">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-12-01T17:07:25.000Z">
+<meta property="article:modified_time" content="2024-12-07T15:41:00.984Z">
 <meta property="article:author" content="BlackJack">
+<meta property="article:tag" content="GPU Programming">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Categories - BJ&#39;s Apt</title>
+  <title>GENERAL Introduction to GPU Programming - BJ&#39;s Apt</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -85,7 +94,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 40vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -191,9 +200,49 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Categories"></span>
+            <span id="subtitle" data-typed-text="GENERAL Introduction to GPU Programming"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-12-01 18:07" pubdate>
+          December 1, 2024 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          10 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          1 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
 
         
       </div>
@@ -209,174 +258,189 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">GENERAL Introduction to GPU Programming</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <h2 id="1-What-is-GPU"><a href="#1-What-is-GPU" class="headerlink" title="1. What is GPU?"></a>1. What is GPU?</h2><h2 id="2-Why-GPUs"><a href="#2-Why-GPUs" class="headerlink" title="2. Why GPUs?"></a>2. Why GPUs?</h2><h2 id="3-What-is-GPU-Programming"><a href="#3-What-is-GPU-Programming" class="headerlink" title="3. What is GPU Programming?"></a>3. What is GPU Programming?</h2><h2 id="4-GPU-Programming-models"><a href="#4-GPU-Programming-models" class="headerlink" title="4. GPU Programming models"></a>4. GPU Programming models</h2><h2 id="5-Summary"><a href="#5-Summary" class="headerlink" title="5. Summary"></a>5. Summary</h2><h2 id="6-Useful-links-and-references"><a href="#6-Useful-links-and-references" class="headerlink" title="6. Useful links and references:"></a>6. Useful links and references:</h2>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
 
-
-
-
-
-<div class="category-list">
+<span class="category-chains">
   
   
     
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Test"
-        id="heading-0cbc6611f5540bd0809a388dc95a615b" role="tab" data-toggle="collapse" href="#collapse-0cbc6611f5540bd0809a388dc95a615b"
-        aria-expanded="false"
-      >
-        Test
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/Test/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>2</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-0cbc6611f5540bd0809a388dc95a615b"
-           role="tabpanel" aria-labelledby="heading-0cbc6611f5540bd0809a388dc95a615b">
+      <span class="category-chain">
         
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/2024/NEW-hello-world/" title="NEW hello world"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">NEW hello world</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2024/HELLO-world/" title="HELLO World"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">HELLO World</span>
-        </a>
-      
-    
-  </div>
+  <a href="/categories/Programming/" class="category-chain-item">Programming</a>
+  
+  
 
-        
-      </div>
+      </span>
+    
+  
+</span>
+
     </div>
   
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Programming"
-        id="heading-e6f43c40ab1c07cd29e4e83e4ef6bf85" role="tab" data-toggle="collapse" href="#collapse-e6f43c40ab1c07cd29e4e83e4ef6bf85"
-        aria-expanded="false"
-      >
-        Programming
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-        <a href="/categories/Programming/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>2</span>
-        </a>
-      
-      <div class="category-collapse collapse " id="collapse-e6f43c40ab1c07cd29e4e83e4ef6bf85"
-           role="tabpanel" aria-labelledby="heading-e6f43c40ab1c07cd29e4e83e4ef6bf85">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/2025/PRACTICAL-Introduction-to-Python-Virtual-Environment/" title="PRACTICAL Introduction to Python Virtual Environment"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">PRACTICAL Introduction to Python Virtual Environment</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2024/GENERAL-Introduction-to-GPU-Programming/" title="GENERAL Introduction to GPU Programming"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">GENERAL Introduction to GPU Programming</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
   
-    
-    
-    
-    <div class="category row nomargin-x">
-      <a class="category-item collapsed
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Website"
-        id="heading-15bbb9d0bbf25e8d2978de1168c749dc" role="tab" data-toggle="collapse" href="#collapse-15bbb9d0bbf25e8d2978de1168c749dc"
-        aria-expanded="false"
-      >
-        Website
-        <span class="list-group-count"></span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
       
-        <a href="/categories/Website/" class="category-count col-2 col-md-1 col-xm-1">
-          <i class="iconfont icon-articles"></i>
-          <span>1</span>
-        </a>
+        <a href="/tags/GPU-Programming/" class="print-no-link">#GPU Programming</a>
       
-      <div class="category-collapse collapse " id="collapse-15bbb9d0bbf25e8d2978de1168c749dc"
-           role="tabpanel" aria-labelledby="heading-15bbb9d0bbf25e8d2978de1168c749dc">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
-      
-      
-        <a href="/2024/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/" title="BUILD Personal Website with Hexo and GitHub Pages"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">BUILD Personal Website with Hexo and GitHub Pages</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
     </div>
   
 </div>
 
 
-              </div>
-            </div>
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>GENERAL Introduction to GPU Programming</div>
+      <div>https://code4yonglei.github.io/2024/GENERAL-Introduction-to-GPU-Programming/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>BlackJack</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>December 1, 2024</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/JULIA-vs-Python-Features-and-Differences/" title="JULIA vs Python: Features and Differences">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">JULIA vs Python: Features and Differences</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/" title="BUILD Personal Website with Hexo and GitHub Pages">
+                        <span class="hidden-mobile">BUILD Personal Website with Hexo and GitHub Pages</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -469,6 +533,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
