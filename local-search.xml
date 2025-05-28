@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>NSC Application Experts Attending the Nordic RSE Conference 2025 at Gothenburg</title>
+    <link href="/2025/NSC-Application-Experts-Attending-the-Nordic-RSE-Conference-2025-at-Gothenburg/"/>
+    <url>/2025/NSC-Application-Experts-Attending-the-Nordic-RSE-Conference-2025-at-Gothenburg/</url>
+    
+    <content type="html"><![CDATA[<p>A <strong>Research Software Engineer (RSE)</strong> is a professional who combines expertise in software development with research skills to develop, optimize, and maintain software that supports scientific or academic research.<br>RSEs bridge the gap between researchers (<em>e.g.</em>, scientists, engineers, or scholars) and software developers, and play a crucial role in developing, maintaining, and improving software that enables scientific research.<br>Despite their significant contributions, RSEs often lack formal recognition within traditional academic structures.</p><p>Inspired by similar RSE initiatives, the <a href="https://nordic-rse.org/"><strong>Nordic-RSE association</strong></a> was established in 2018 to support and recognize the role of RSEs in academia and research institutions across the Nordic and Baltic regions.</p><p>The aim of Nordic-RSE is to 1) provide a networking platform for individuals involved in research software development, 2) foster a community for professional development and career advancement of RSEs, 3) organize events such as seminars, workshops, and conferences to facilitate knowledge sharing, and 4) support the establishment of RSE services within research institutions and communities.</p><p>On May 20-21, the 2nd annual Nordic RSE conference (also known as the Nordic RSE Conference 2025) brings together researchers, software developers, data scientists, and infrastructure experts from across the Nordic and Baltic regions discussing key topics on software sustainability, best practices in software development, reproducibility and open science, high-performance computing and research infrastructure, HPC training, and career paths for RSEs.</p><p>The specific agenda for the conference is available at <a href="https://nordic-rse.org/nrse2025/"><strong>HERE</strong></a>.</p><p>NSC application experts, XXXX, SSSSS, and <a href="https://liu.se/medarbetare/yonwa58">Yonglei Wang</a> attended the conference. Yonglei Wang delivered a presentation outlining the training arrangements from the ENCCS and EVITA projects.</p><p><img src="/img/conference/250521-Nordic-RSE-Yonglei.png" alt="Yonglei&#39;s presentation about &quot;Training Triumphs&quot;"></p><p>The Nordic-RSE conference 2026 will happen in Tromsø, Norway on June 9-10 2026. Looking forward to seeing you there for in-depth and engaging interactions!!</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Conference</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Training</tag>
+      
+      <tag>RSE</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>GENERAL Introduction to GPU Programming</title>
     <link href="/2025/GENERAL-Introduction-to-GPU-Programming/"/>
     <url>/2025/GENERAL-Introduction-to-GPU-Programming/</url>
@@ -20,7 +47,7 @@
     
     <tags>
       
-      <tag>GPU Programming</tag>
+      <tag>GPU</tag>
       
     </tags>
     
