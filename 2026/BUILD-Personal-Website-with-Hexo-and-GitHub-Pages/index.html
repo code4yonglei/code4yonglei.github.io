@@ -30,14 +30,10 @@
 <meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/hexo-fluid.jpg">
 <meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-new-repository.jpg">
 <meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-repo-name.jpg">
-<meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-global-setting.jpg">
-<meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-ssh-key.jpg">
-<meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-new-ssh.jpg">
-<meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-add-ssh-key.jpg">
 <meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-depolyment.jpg">
 <meta property="og:image" content="https://code4yonglei.github.io/img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/new-hello-world.jpg">
-<meta property="article:published_time" content="2026-02-22T20:51:51.000Z">
-<meta property="article:modified_time" content="2026-02-19T00:37:45.949Z">
+<meta property="article:published_time" content="2026-02-19T20:51:51.000Z">
+<meta property="article:modified_time" content="2026-02-19T09:04:24.615Z">
 <meta property="article:author" content="BlackJack">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Github Pages">
@@ -110,7 +106,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>BJ&#39;s HO</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -140,18 +136,6 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
               <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>Categories</span>
@@ -167,6 +151,18 @@
               <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
               </a>
             </li>
           
@@ -223,8 +219,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-02-22 21:51" pubdate>
-          February 22, 2026 pm
+        <time datetime="2026-02-19 21:51" pubdate>
+          February 19, 2026 pm
         </time>
       </span>
     
@@ -235,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          437 words
+          451 words
         
       </span>
     
@@ -288,82 +284,82 @@
             
               <div class="markdown-body">
                 
-                <h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>It has been a long time since I would like to own a particular space to record my work and enjoy my hobby of writting, and until now I’ve finally started creating my personal website here. Among a variety of schemes, I adopt <code>Hexo</code> + <code>GitHub Pages</code>, which is friendly to noob like me.</p>
+                <h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h2><p>It has been a long time since I would like to own a particular space to record my work and enjoy my hobby of writting, and until now I’ve finally started creating my personal website here. Among a variety of schemes, I combined <strong>Hexo</strong> and <strong>GitHub Pages</strong>, which is friendly to noob like me.</p>
 <p>Hexo is a fast, simple &amp; powerful blog framework. Simply write post in Markdown and Hexo generates static files deployed to GitHub Pages. </p>
 <p>As the first post, I am writing this tutorial just in case anyone who is also interested in having a personal website but hasn’t been prepared yet. On the other hand, it will be an importent reference for myself to re-create the environment efficiently when I change the Mac or migrate data in the future.</p>
 <h2 id="2-Environment-setup"><a href="#2-Environment-setup" class="headerlink" title="2. Environment setup"></a>2. Environment setup</h2><h3 id="2-1-Install-Node-js-locally"><a href="#2-1-Install-Node-js-locally" class="headerlink" title="2.1 Install Node.js locally"></a>2.1 Install <code>Node.js</code> locally</h3><p><code>Node.js</code> is a free, open-source, cross-platform (Mac OS, Window, Linux), and JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.</p>
 <p>Navigate to Node.js <a target="_blank" rel="noopener" href="https://nodejs.org/en">webpage</a> and select the appropriate installation file to download according to your local environment.</p>
 <ul>
 <li>For Windows and Mac OS users, click the installer file to install it.</li>
-<li>For Linux users, the installation is somewhat complicated. The following two installation methods are recommended, and you can choose one of them:<ul>
-<li>Compile and install from source code without configuring bash, but compiling takes time, see the <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1938607">reference</a></li>
-<li>Download and install the binary file, you need to configure the bash environment, see the <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1772306">reference</a></li>
+<li>For Linux users, the installation is somewhat complicated. The following two installation methods are recommended, and you can choose one of them.<ul>
+<li>Compile and install from the source code without configuring bash, but compiling takes time, see the <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1938607">reference</a>.</li>
+<li>Download and install the binary file, you need to configure the bash environment, see the <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1772306">reference</a>.</li>
 </ul>
 </li>
 </ul>
 <p>After the installation is complete, enter the following commands in the terminal:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript">$ npm -v<br>$ node -v<br></code></pre></td></tr></table></figure>
-<p>If there are output with version numbers, the installation of Node.js is successful in your local computer.</p>
-<h3 id="2-2-Install-Git"><a href="#2-2-Install-Git" class="headerlink" title="2.2 Install Git"></a>2.2 Install Git</h3><p>Git is a distributed version control system that tracks versions of files. It is often used to control source code by programmers who are developing software collaboratively.</p>
-<p>If you are not familiar with Git, or you have heard of Git but want to know more about it, you can come to the lesson materials from <a target="_blank" rel="noopener" href="https://coderefinery.org/">CodeRefinery</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm -v</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">node -v</span><br></code></pre></td></tr></table></figure>
+<p>If there are output with specific version numbers, the installation of Node.js is successful in your local computer.</p>
+<h3 id="2-2-Install-Git"><a href="#2-2-Install-Git" class="headerlink" title="2.2 Install Git"></a>2.2 Install Git</h3><p>Git is a distributed version control system that tracks versions of files. It is often used to control source code by programmers who develop software collaboratively.</p>
+<p>If you are not familiar with Git, or you have heard of Git but want to know more about it, you can come to the lesson materials from <a target="_blank" rel="noopener" href="https://coderefinery.org/">CodeRefinery</a>.</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://coderefinery.github.io/git-intro/">Introduction to version control with Git</a></li>
-<li><a target="_blank" rel="noopener" href="https://coderefinery.github.io/git-collaborative/">Collaborative distributed version control</a></li>
+<li><a target="_blank" rel="noopener" href="https://coderefinery.github.io/git-intro/">Introduction to version control with Git</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://coderefinery.github.io/git-collaborative/">Collaborative distributed version control</a>.</li>
 </ul>
 <p>Following the instructions <a target="_blank" rel="noopener" href="https://github.com/git-guides/install-git">HERE</a> to install Git.</p>
-<p>After the installation, right-click the mouse anywhere on your desktop or in a folder. If you see the following options:</p>
+<p>After the installation, right-click the mouse anywhere on your desktop or in a folder. If you see the following options below, Git has been successfully installed on your computer.</p>
 <ul>
 <li><code>Open Git GUI here</code></li>
 <li><code>Open Git Bash here</code></li>
 </ul>
-<p>then Git has been successfully installed on your computer.</p>
 <h3 id="2-3-Install-Hexo"><a href="#2-3-Install-Hexo" class="headerlink" title="2.3 Install Hexo"></a>2.3 Install Hexo</h3><p>Hexo is a fast, simple, and powerful blogging framework powered by Node.js. It allows users to create static websites, blogs, or portfolios with minimal setup. Hexo uses Markdown files for content, which makes it easy to write posts, and it generates static HTML files, which makes it fast for hosting.</p>
 <p>Moreover, Hexo provides many <a target="_blank" rel="noopener" href="https://hexo.io/docs/themes">themes</a> that you can easily integrate to your blog with a full of customization.</p>
-<p>Once Node.js and Git are successfully installed, you can use npm (Node Package Manager) to install Hexo:</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">$ npm <span class="hljs-keyword">install</span> -g hexo-cli<br>$ npm <span class="hljs-keyword">install</span> hexo<br></code></pre></td></tr></table></figure>
+<p>Once Node.js and Git are successfully installed, you can use <code>npm</code> (Node Package Manager) to install Hexo:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install -g hexo-cli</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install hexo</span><br></code></pre></td></tr></table></figure>
+
 
 <h3 id="2-4-Initialize-Hexo"><a href="#2-4-Initialize-Hexo" class="headerlink" title="2.4 Initialize Hexo"></a>2.4 Initialize Hexo</h3><p>Once Hexo is installed, run the following commands to initialize Hexo in the target <code>&lt;my-website&gt;</code>.</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$</span> hexo init &lt;my<span class="hljs-literal">-website</span>&gt;<br><span class="hljs-variable">$</span> <span class="hljs-built_in">cd</span> &lt;my<span class="hljs-literal">-website</span>&gt;<br><span class="hljs-variable">$</span> npm install<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_">$ </span><span class="language-bash">hexo init &lt;my-website&gt;</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash"><span class="hljs-built_in">cd</span> &lt;my-website&gt;</span><br><span class="hljs-meta prompt_">$ </span><span class="language-bash">npm install</span><br></code></pre></td></tr></table></figure>
 
 <p>This will creates a new directory (<code>&lt;my-website&gt;</code>) with the default&#x2F;essential structure of a Hexo site and installs the required dependencies. Your project folder will look like:</p>
-<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs 1c">.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br><span class="hljs-string">|   ├── _drafts</span><br><span class="hljs-string">|   └── _posts</span><br>└── themes<br></code></pre></td></tr></table></figure>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs console">.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes<br></code></pre></td></tr></table></figure>
 
 <ul>
 <li>The <code>_config.yml</code> is the “site config” file in Hexo root dict, personalize the top contents like <code>title</code>, <code>subtitle</code>, <code>author</code>, <code>description</code> and other global settings.</li>
 <li>The <code>package.json</code> file contains the application data. The <a target="_blank" rel="noopener" href="https://ejs.co/">EJS</a>, <a target="_blank" rel="noopener" href="https://stylus-lang.com/">Stylus</a> and <a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/">Markdown</a> renderers are installed by default.</li>
 <li>Scaffold folder: When you create a new post, Hexo bases the new file on the scaffold.</li>
-<li>Source folder: This is where you put your site’s content. Hexo ignores hidden files and files or folders whose names are prefixed with _ (underscore) - except the _posts folder. Renderable files (e.g. Markdown, HTML) will be processed and put into the public folder, while other files will simply be copied.</li>
+<li>Source folder: This is where you put your site’s content. Hexo ignores hidden files and files or folders whose names are prefixed with <code>_</code> (underscore) - except the <code>_posts</code> folder. Renderable files (e.g. Markdown, HTML) will be processed and put into the public folder, while other files will simply be copied.</li>
 <li>Theme folder: Hexo generates a static website by combining the site contents with the theme.</li>
 </ul>
-<p>Run the following basic commands to compile Hexo</p>
+<p>Run the following basic commands to compile Hexo:</p>
 <ul>
-<li><code>hexo clean</code> to clear the static files and cache</li>
-<li><code>hexo g</code> to generate static web files locally</li>
-<li><code>hexo s</code> to start a local sever for preview<ul>
+<li><code>hexo clean</code> to clear the static files and cache.</li>
+<li><code>hexo g</code> to generate static web files locally.</li>
+<li><code>hexo s</code> to start a local sever for preview.<ul>
 <li>Hexo will be run at <code>localhost:4000</code> by default. Now open <code>http://localhost:4000</code> in your browser to see the result.</li>
 </ul>
 </li>
-<li><code>hexo d</code> to deploy after generation finish (will talk this part in the following section)</li>
+<li><code>hexo d</code> to deploy after generation finish (will talk this part in the following section).</li>
 </ul>
-<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/hexo-default.jpg" srcset="/img/loading.gif" lazyload alt="hexo-default"></p>
+<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/hexo-default.jpg" srcset="/img/loading.gif" lazyload alt="Hexo default theme"></p>
 <h2 id="3-Customize-Hexo-theme"><a href="#3-Customize-Hexo-theme" class="headerlink" title="3. Customize Hexo theme"></a>3. Customize Hexo theme</h2><p>The Hexo community provides a lot of themes that you can choose to personalize your website. Navigate to the <a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo themes</a> and select one to make your website attractive and professional.</p>
 <p>Personally, I like <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid</a>, an elegant Material-Design theme, particularly for writing posts. If you prefer the other themes, the configuration method should be similar.</p>
 <ul>
-<li>Download Fluid theme and then the <code>_config.fluid.yml</code> file in root dict is created for custom.<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install <span class="hljs-comment">--save hexo-theme-fluid</span><br></code></pre></td></tr></table></figure></li>
-<li>Modify <code>_config.yml</code> in root dict via replacing the theme config with your new theme name.<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-meta"># Extensions</span><br><span class="hljs-symbol">theme:</span> fluid<br></code></pre></td></tr></table></figure></li>
+<li>Download Fluid theme and then the <code>_config.fluid.yml</code> file in root dict is created for custom.<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install --save hexo-theme-fluid<br></code></pre></td></tr></table></figure></li>
+<li>Modify <code>_config.yml</code> in root dict via replacing the theme config with your new theme name.<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">Extensions</span><br>theme: fluid<br></code></pre></td></tr></table></figure></li>
 </ul>
 <p>Run the command <code>hexo s</code> again and open the <code>http://localhost:4000</code> in your browser to see the result using the Fluid theme. </p>
-<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/hexo-fluid.jpg" srcset="/img/loading.gif" lazyload alt="hexo-fluid"></p>
+<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/hexo-fluid.jpg" srcset="/img/loading.gif" lazyload alt="Hexo fluid theme"></p>
 <p>For more configuration, please refer to <a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/en/start/">Hexo Fluid Docs</a>.</p>
 <h2 id="4-Personalize-domain"><a href="#4-Personalize-domain" class="headerlink" title="4. Personalize domain"></a>4. Personalize domain</h2><p><a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#about-github-pages">GitHub Pages</a> is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.</p>
 <p>To publish a user site, we can follow the <a target="_blank" rel="noopener" href="https://pages.github.com/">getting started instructions</a> to set up your site using GitHub Pages.</p>
 <h3 id="4-1-Create-a-GitHub-Pages-repository"><a href="#4-1-Create-a-GitHub-Pages-repository" class="headerlink" title="4.1 Create a GitHub Pages repository"></a>4.1 Create a GitHub Pages repository</h3><p>We should create a repository on GitHub.</p>
 <ul>
-<li>In the upper-right corner of any page of your Github account, select <code>+</code>, then click <code>New repository</code><ul>
-<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-new-repository.jpg" srcset="/img/loading.gif" lazyload alt="github-new-repository"></li>
+<li>In the upper-right corner of any page of your Github account, select <code>+</code>, then click <code>New repository</code>.<ul>
+<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-new-repository.jpg" srcset="/img/loading.gif" lazyload alt="github-new-repository">.</li>
 </ul>
 </li>
-<li>Enter <code>&lt;username&gt;.github.io</code> as the repository name. For example, if your username is octocat, the repository name should be <code>octocat.github.io</code>. This link will end up being the base URL of your website.<ul>
+<li>Enter <code>&lt;username&gt;.github.io</code> as the repository name. For example, if your username is <code>octocat</code>, the repository name should be <code>octocat.github.io</code>. This link will end up being the base URL of your website.<ul>
 <li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-repo-name.jpg" srcset="/img/loading.gif" lazyload alt="github-repo-name"></li>
 </ul>
 </li>
@@ -377,44 +373,32 @@
 <li>Paste the text below, replacing <code>&lt;your_email&gt;</code> with your GitHub email address.  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t ed25519 -C <span class="hljs-string">&quot;&lt;your_email&gt;&quot;</span><br></code></pre></td></tr></table></figure>
 <ul>
 <li>When you’re prompted to “Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;XXX&#x2F;.ssh&#x2F;id_ed25519):”, you can press Enter to accept the default file location.</li>
-<li>Please note that if you created SSH keys previously, ssh-keygen may ask you to rewrite another key, in which case we recommend creating a custom-named SSH key.</li>
+<li>Please note that if you created SSH keys previously, <code>ssh-keygen</code> may ask you to rewrite another key, in which case we recommend creating a custom-named SSH key.</li>
 </ul>
 </li>
-<li>Type a secure passphrase when you see the following output at the prompt:  <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ada">&gt; Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): [<span class="hljs-keyword">Type</span> <span class="hljs-type">a </span>passphrase]<br>&gt; Enter same passphrase again: [<span class="hljs-keyword">Type</span> <span class="hljs-type">passphrase </span>again]<br></code></pre></td></tr></table></figure></li>
+<li>Type a secure passphrase when you see the following output at the prompt:  <figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs console"><span class="hljs-meta prompt_">&gt; </span><span class="language-bash">Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase): [Type a passphrase]</span><br><span class="hljs-meta prompt_">&gt; </span><span class="language-bash">Enter same passphrase again: [Type passphrase again]</span><br></code></pre></td></tr></table></figure></li>
 </ul>
 <h3 id="4-3-Add-the-SSH-key-to-your-Github-account"><a href="#4-3-Add-the-SSH-key-to-your-Github-account" class="headerlink" title="4.3 Add the SSH key to your Github account"></a>4.3 Add the SSH key to your Github account</h3><p>You can add the generated SSH key and use it for authentication, or commit signing, or both. </p>
 <ul>
 <li>Copy the SSH public key to your clipboard.</li>
-<li>In the upper-right corner of any page on GitHub, click your profile photo, then click <code>Settings</code>.<ul>
-<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-global-setting.jpg" srcset="/img/loading.gif" lazyload alt="github-global-setting"></li>
-</ul>
-</li>
-<li>In the <code>Access</code> section of the sidebar, click <code>SSH and GPG keys</code>.<ul>
-<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-ssh-key.jpg" srcset="/img/loading.gif" lazyload alt="github-ssh-key"></li>
-</ul>
-</li>
-<li>Click the green button with the name of <code>New SSH key</code> or <code>Add SSH key</code><ul>
-<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-new-ssh.jpg" srcset="/img/loading.gif" lazyload alt="github-new-ssh"></li>
-</ul>
-</li>
+<li>In the upper-right corner of any page on GitHub, click your profile photo, then click <code>Settings</code>.</li>
+<li>In the <code>Access</code> section of the sidebar, click <code>SSH and GPG keys</code>.</li>
+<li>Click the green button with the name of <code>New SSH key</code> or <code>Add SSH key</code>.</li>
 <li>In the “Title” field, add a descriptive label for the ssh key.</li>
 <li>Select the type of key, either <code>Authentication Key</code> or <code>Signing Key</code>.</li>
-<li>Paste your public key in the “Key” field.</li>
-<li>Click <code>Add SSH key</code>.<ul>
-<li><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-add-ssh-key.jpg" srcset="/img/loading.gif" lazyload alt="github-add-ssh-key"></li>
-</ul>
-</li>
+<li>Paste your public key in the <code>Key</code> field.</li>
+<li>Click <code>Add SSH key</code>.</li>
 <li>GitHub will prompt you to enter your password for confirmation.</li>
-<li>Test your SSH connection via Git Bash prompt (windows users) and terminal (Mac OS and Linux users)<ul>
-<li>Enter the command <code>ssh -T git@github.com</code></li>
-<li>You may see a warning like this:  <figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-title class_">The</span> authenticity <span class="hljs-keyword">of</span> host <span class="hljs-string">&#x27;github.com (IP ADDRESS)&#x27;</span> can<span class="hljs-string">&#x27;t be established.</span></span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-string">ED25519 key fingerprint is SHA256:+(XXXXX).</span></span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-string">Are you sure you want to continue connecting (yes/no)?</span></span><br></code></pre></td></tr></table></figure></li>
-<li>Verify the fingerprint in this message matches GitHub’s public key fingerprint. If it does, then type yes and you will theoretically get   <figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript"><span class="hljs-title class_">Hi</span> <span class="hljs-variable constant_">USERNAME</span>! <span class="hljs-title class_">You</span><span class="hljs-string">&#x27;ve successfully authenticated.</span></span><br></code></pre></td></tr></table></figure></li>
+<li>Test your SSH connection via Git Bash prompt (windows users) and terminal (Mac OS and Linux users).<ul>
+<li>Enter the command <code>ssh -T git@github.com</code>.</li>
+<li>You may see a warning like this:  <figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs console"><span class="hljs-meta prompt_">&gt; </span><span class="language-bash">The authenticity of host <span class="hljs-string">&#x27;github.com (IP ADDRESS)&#x27;</span> can<span class="hljs-string">&#x27;t be established.</span></span><br><span class="hljs-meta prompt_">&gt; </span><span class="language-bash"><span class="hljs-string">ED25519 key fingerprint is SHA256:+(XXXXX).</span></span><br><span class="hljs-meta prompt_">&gt; </span><span class="language-bash"><span class="hljs-string">Are you sure you want to continue connecting (yes/no)?</span></span><br></code></pre></td></tr></table></figure></li>
+<li>Verify the fingerprint in this message matches GitHub’s public key fingerprint. If it does, then type yes and you will theoretically get   <figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs console"><span class="hljs-meta prompt_">&gt; </span><span class="language-bash">Hi USERNAME! You<span class="hljs-string">&#x27;ve successfully authenticated.</span></span><br></code></pre></td></tr></table></figure></li>
 <li>If you receive a “permission denied” message, you can come to the <a target="_blank" rel="noopener" href="https://docs.github.com/en/authentication/troubleshooting-ssh/error-permission-denied-publickey">Error: Permission denied (publickey)</a> webpage to see how to solve this problem.</li>
 </ul>
 </li>
 </ul>
 <h3 id="4-4-Update-config-yml-in-root-dict"><a href="#4-4-Update-config-yml-in-root-dict" class="headerlink" title="4.4 Update _config.yml in root dict"></a>4.4 Update <code>_config.yml</code> in root dict</h3><p>As we have adopted the <code>Fluid</code> theme in the <code>_config.yml</code> file, we scroll down to the bottom of this file and update it with your depolyment target information.</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
 
 <p>At the root dict, right-click the mouse and click <code>Open Git Bash Here</code> and then run the following basic commands</p>
 <ul>
@@ -422,31 +406,31 @@
 <li><code>hexo g &amp;&amp; hexo s</code> to generate static web files locally and then to start a local sever at <code>http://localhost:4000/</code> for preview</li>
 <li><code>hexo d</code> to deploy once you can make sure that all the info at <code>http://localhost:4000/</code> are correct<ul>
 <li>your depolyment will be successful if you see the output <code>INFO  Deploy done: git</code></li>
-<li>If there is an error info like <code>ERROR Deployer not found: git</code>, run the command <code>npm install hexo-deployer-git --save</code> and regenerate and redepoly your materials via   <figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs verilog">hexo clean &amp;&amp; hexo <span class="hljs-keyword">generate</span><br>hexo deploy<br></code></pre></td></tr></table></figure></li>
+<li>If there is an error info like <code>ERROR Deployer not found: git</code>, run the command <code>npm install hexo-deployer-git --save</code> and regenerate and redepoly your materials via   <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean &amp;&amp; hexo generate<br>hexo deploy<br></code></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
-<h3 id="4-5-Update-GitHub-repository"><a href="#4-5-Update-GitHub-repository" class="headerlink" title="4.5 Update GitHub repository"></a>4.5 Update GitHub repository</h3><ul>
-<li>Come to the Github repository for your personal website, which should be <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code>, and then the <code>Settings</code> at upper part of your web brower.</li>
+<h3 id="4-5-Update-GitHub-repository"><a href="#4-5-Update-GitHub-repository" class="headerlink" title="4.5 Update GitHub repository"></a>4.5 Update GitHub repository</h3><p>Come to the Github repository for your personal website, which should be <code>https://github.com/&lt;username&gt;/&lt;username&gt;.github.io</code>, and then the <code>Settings</code> at upper part of your web brower.</p>
+<ul>
 <li>In the <code>Code and automation</code> section of the sidebar, click <code>Pages</code>.<ul>
-<li>In the <code>Build and deployment/Source</code> section, you should choose <code>Deploy from a branch</code></li>
-<li>Select <code>main/(root)</code> at the <code>Branch</code> section and <code>save</code> it</li>
+<li>In the <code>Build and deployment/Source</code> section, you should choose <code>Deploy from a branch</code>.</li>
+<li>Select <code>main/(root)</code> at the <code>Branch</code> section and <code>save</code> it.</li>
 </ul>
 </li>
 <li>Wait for several minutes and you will see the URL for your personal website.<ul>
-<li>if you have your own custom domain, you can follow the instructions <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">HERE</a> and add it to GitHub Pages</li>
+<li>if you have your own custom domain, you can follow the instructions <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">HERE</a> and add it to GitHub Pages.</li>
 </ul>
 </li>
 </ul>
-<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-depolyment.jpg" srcset="/img/loading.gif" lazyload alt="github-depolyment"></p>
-<h3 id="4-6-Create-a-new-post"><a href="#4-6-Create-a-new-post" class="headerlink" title="4.6 Create a new post"></a>4.6 Create a new post</h3><p>At the root dict of Hexo project (<code>&lt;my-website&gt;</code>), right-click the mouse and click <code>Open Git Bash Here</code></p>
+<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/github-depolyment.jpg" srcset="/img/loading.gif" lazyload alt="Github depolyment"></p>
+<h3 id="4-6-Create-a-new-post"><a href="#4-6-Create-a-new-post" class="headerlink" title="4.6 Create a new post"></a>4.6 Create a new post</h3><p>At the root dict of Hexo project (<code>&lt;my-website&gt;</code>), right-click the mouse and click <code>Open Git Bash Here</code>.</p>
 <ul>
-<li>run the command <code>hexo new &quot;NEW hello world&quot;</code> and it will create a new file (<code>NEW-hello-world.md</code>) in <code>&lt;PATH&gt;/source/_posts/&gt;</code> with some default front-matter.</li>
+<li>Run the command <code>hexo new &quot;NEW hello world&quot;</code> and it will create a new file (<code>NEW-hello-world.md</code>) in <code>&lt;PATH&gt;/source/_posts/&gt;</code> with some default front-matter.</li>
 <li>Edit this file and add content to your post with basic <a target="_blank" rel="noopener" href="https://www.markdownguide.org/basic-syntax/">Markdown Syntax</a>.</li>
-<li>run the Hexo commands mentioned above to generate static HTML files and then depoly these new files to Github Page.</li>
+<li>Run the Hexo commands mentioned above to generate static HTML files and then depoly these new files to Github Page.</li>
 </ul>
 <p>After deployment, visit <code>https://&lt;username&gt;.github.io</code> to see your live site.</p>
-<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/new-hello-world.jpg" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/../img/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/new-hello-world.jpg" srcset="/img/loading.gif" lazyload alt="New blogpost"></p>
 <h2 id="5-Summary"><a href="#5-Summary" class="headerlink" title="5. Summary"></a>5. Summary</h2><p>Using GitHub Pages to build a personal website and distinguish yourself with a recognizable identity and external brand in your communities of interest is a worthwhile endeavor if you’re willing to spend some extra time setting things up.<br>Hexo and Github Page become such a great tool for you.<br>This pairing is a convenient, performant and free blogging platform.<br>With its simplicity and its community, it’s easy to set up, allowing you to just focus on what matters: Your sharing.<br>I hope you find this post useful.</p>
 
                 
@@ -508,7 +492,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 22, 2026</div>
+          <div>February 19, 2026</div>
         </div>
       
       
