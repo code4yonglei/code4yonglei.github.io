@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>PRACTICAL Machine Learning — From Workshop to Comprehensive Course</title>
+    <link href="/2026/PRACTICAL-Machine-Learning%E2%80%94From-Workshop-to-Comprehensive-Course/"/>
+    <url>/2026/PRACTICAL-Machine-Learning%E2%80%94From-Workshop-to-Comprehensive-Course/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-Development-of-lesson-material"><a href="#1-Development-of-lesson-material" class="headerlink" title="1. Development of lesson material"></a>1. Development of lesson material</h2><p>Last summer, I took time to develope a lesson material titled <strong>Practical Machine Learning</strong>, designed to provide a structured and hands-on introduction to classical machine learning. The goal was to bridge theory and practice, helping participants not only understand core concepts but also implement them effectively using real datasets and Python-based tools.</p><p>The lesson material is organized into eight episodes:</p><ul><li>Introduction to Machine Learning</li><li>Fundamentals of Machine Learning</li><li>Scientific Data for Machine Learning</li><li>Data Preparation for Machine Learning</li><li>Supervised Learning (I): Classification</li><li>Supervised Learning (II): Regression</li><li>Unsupervised Learning (I): Clustering</li><li>Unsupervised Learning (II): Dimensionality Reduction</li></ul><p>The lesson material begins with foundational concepts — what machine learning is, how it differs from traditional programming, and how a typical ML workflow is structured. It then moves into scientific data handling and data preprocessing, which are often underestimated but crucial steps in any real-world ML project.</p><p>The second half of the course focuses on core algorithms in classical machine learning. Participants explore supervised learning methods such as classification and regression, followed by unsupervised techniques including clustering and dimensionality reduction. Throughout the course, emphasis is placed on practical implementation, model evaluation, and understanding when and why to use specific methods.</p><h2 id="2-Deliver-workshop-and-webinar"><a href="#2-Deliver-workshop-and-webinar" class="headerlink" title="2. Deliver workshop and webinar"></a>2. Deliver workshop and webinar</h2><p>The lesson material was first adopted at <a href="https://enccs.se/events/09-2025-practical-machine-learning/">ENCCS as a 10-hour in-depth workshop</a>. Participants included researchers, engineers, and industry practitioners interested in applying machine learning to scientific and engineering problems. The extended format allowed time for detailed explanations, live coding sessions, and interactive discussions.</p><p><img src="/../img/PRACTICAL-Machine-Learning%E2%80%94From-Workshop-to-Comprehensive-Course/pml-workshop-enccs.jpg" alt="PML-workshop-ENCCS"></p><p>Later, the lesson material was carefully recalibrated and condensed into a 3-hour webinar format and delivered at <a href="https://www.scilifelab.se/event/practical-machine-learning/">Berzelius training program</a>. This required distilling the key ideas while maintaining clarity and practical relevance. The shorter version focused on core concepts, selected demonstrations, and high-impact examples, making it accessible to a broader audience.</p><p><img src="/../img/PRACTICAL-Machine-Learning%E2%80%94From-Workshop-to-Comprehensive-Course/pml-webinar-nsc.jpeg" alt="PML-webinar-NSC"></p><h2 id="3-Continuous-improvement-of-lesson-material"><a href="#3-Continuous-improvement-of-lesson-material" class="headerlink" title="3. Continuous improvement of lesson material"></a>3. Continuous improvement of lesson material</h2><p>Currently, I am revising and expanding the lesson materials to transform it into a more comprehensive and structured course covering a wider range of classical mL topics. The aim is to build a cohesive learning path that supports both beginners entering the field and practitioners seeking to strengthen their conceptual foundation.</p><p>ML evolves rapidly, but a solid understanding of classical methods remains essential. By continuously refining this course, I hope to provide a reliable and practical resource for those looking to apply machine learning in research and real-world applications.</p><p>More updates will follow as the materials continue to develop.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>ML</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Classification</tag>
+      
+      <tag>Regression</tag>
+      
+      <tag>Clustering</tag>
+      
+      <tag>DimensionalityReduction</tag>
+      
+      <tag>Algorithms</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>BUILD Personal Website with Hexo and GitHub Pages</title>
     <link href="/2026/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/"/>
     <url>/2026/BUILD-Personal-Website-with-Hexo-and-GitHub-Pages/</url>
